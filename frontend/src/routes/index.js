@@ -14,6 +14,16 @@ const routes = [
         component: () => import('../screens/About.vue')
     },
     {
+        path: '/login',
+        name: 'Login',
+        component: () => import('../screens/Login.vue')
+    },
+    {
+        path: '/register',
+        name: 'Register',
+        component: () => import('../screens/Register.vue')
+    },
+    {
         path: '/:catchAll(.*)',
         name: 'NotFound',
         component: NotFound
